@@ -38,6 +38,8 @@ def sample():
                                       status=200,
                                       mimetype='application/json')
         return response
+    elif request.method == 'GET':
+	return 'GET return'
 
 @app.route('/redirectsrc/', methods=['GET'])
 def redirect_src_sample():
